@@ -3,7 +3,7 @@
 
 1. Download en installeer de [Arduino IDE](https://www.arduino.cc/en/software)
 2. Sluit de Arduino aan op de computer via de USB-kabel.
-3. Download de voorbeelden van [Github](#TODO:link), door op de pagina rechtsboven op [<>Code] te klikken en daarna op [Download Zip]. Je hebt daarna een zip bestand met alles wat op de github pagina ziet. 
+3. Download de voorbeelden van [Github](https://github.com/heerko/Drawing_Machines), door op de pagina rechtsboven op [<>Code] te klikken en daarna op [Download Zip]. Je hebt daarna een zip bestand met alles wat op de github pagina ziet. 
 4. Open de voorbeelden. In elke map zit een bestand met Arduino Code, een beschrijving voor hoe het aangesloten moet worden en andere uitleg. 
 5. Upload de code naar de Arduino. 
 6. Probeer de voorbeelden uit en maak een plan met je groepje wat er moet gebeuren van deze bewegende onderdelen een tekenmachine te maken.
