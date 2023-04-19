@@ -64,6 +64,8 @@ Dit voorbeeld laat zien hoe je zowel een servo- als een stepper-motor kan aanslu
 3. Upload het voorbeeld naar de Arduino.
 4. De servo-motor zal heen en weer bewegen en de stepper-motor zal één stap maken.
 
+![Servos aansluiten](./assets/fritzing/servo_stepper_bb.png)
+
 ### 4_Servo_Double
 
 In dit laatste voorbeeld laat zien hoe je twee servo-motoren kan aansluiten op een Arduino-bord en ze onafhankelijk van elkaar kan laten bewegen. 
