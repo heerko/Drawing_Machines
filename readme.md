@@ -7,7 +7,7 @@
 4. Open de voorbeelden. In elke map zit een bestand met Arduino Code, een beschrijving voor hoe het aangesloten moet worden en andere uitleg. 
 5. Upload de code naar de Arduino. 
 6. Probeer de voorbeelden uit en maak een plan met je groepje wat er moet gebeuren van deze bewegende onderdelen een tekenmachine te maken.
-7. Maak je tekenmachine.
+7. De opdracht: Maak met deze materialen een simpele tekenmachine. Je mag de progammatjes aanpassen, meerdere motors toevoegen, materialen zoeken/gebruiken
 8. Leg de uitkomsten vast! Maak foto's of video's. Bewaar de tekeningen.
 9. Opruimen. Breek je machine weer af en berg alles weer op zoals je het hebt gepakt. Sorry :)
 
@@ -15,7 +15,9 @@
 
 Arduino is een kleine computer die je kunt programmeren om verschillende taken uit te voeren. Het is een handig hulpmiddel om elektronische projecten te maken, zoals robots, sensoren en andere interactieve apparaten. Met Arduino kun je sensoren en motoren aansturen en input van verschillende bronnen verwerken om bepaalde acties uit te voeren. Het wordt vaak gebruikt door hobbyisten, studenten en professionele ontwikkelaars vanwege de flexibiliteit en de gemakkelijke manier waarop je ermee kunt experimenteren en prototypen kunt maken.
 
-Vandaag gebruiken we de Arduino met twee types makkelijk te gebruiken motoren.
+Vandaag gebruiken we de Arduino met twee types makkelijk te gebruiken motoren. 
+
+*opmerking* om het allemaal zo makkelijk mogelijk te maken gebruiken we vandaag de voeding (stroom) van de Arduino. Dat wordt niet aanbevolen en kan storing in de Arduino veroorzaken (brownouts) of potentieel de Arduino beschadigen. In een 'echt' project zullen we dit anders moeten oplossen dmv een aparte voeding voor de motors.
 
 ### Servo
 
@@ -62,7 +64,16 @@ Dit voorbeeld laat zien hoe je zowel een servo- als een stepper-motor kan aanslu
 3. Upload het voorbeeld naar de Arduino.
 4. De servo-motor zal heen en weer bewegen en de stepper-motor zal één stap maken.
 
-![Servo en Stepper aansluiten](./assets/fritzing/servo_stepper_bb.png)
+### 4_Servo_Double
+
+In dit laatste voorbeeld laat zien hoe je twee servo-motoren kan aansluiten op een Arduino-bord en ze onafhankelijk van elkaar kan laten bewegen. 
+
+1. Open het voorbeeld in het mapje Code/4_Servo_Double/4_Servo_Double.ino
+2. Sluit de servo-motoren aan op de Arduino volgens het bedradingsschema.
+3. Upload het voorbeeld naar de Arduino.
+4. De servo-motoren beginnen nu te bewegen.
+
+![Servos aansluiten](./assets/fritzing/servos_bb.png)
 
 ## Conclusie
 
