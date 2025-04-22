@@ -27,7 +27,7 @@ De positie van de servo kan worden gecontroleerd door een speciale puls naar de 
 
 ### Stepper
 
-Een stepper is ook een apparaat dat wordt gebruikt om een mechanisme of object te verplaatsen, maar het werkt anders dan een servo. Een stepper gebruikt elektrische impulsen om een motor aan te sturen die in kleine stapjes draait, waardoor het mechanisme of object in kleine stapjes beweegt. Het aantal impulsen dat wordt gegeven, bepaalt hoeveel stappen de motor draait en dus hoeveel het mechanisme of object beweegt. Dit maakt het mogelijk om nauwkeurige bewegingen te maken en bijvoorbeeld ook om de snelheid van de beweging te regelen.
+Een stepper, kort voor stepper motor, is ook een motor die wordt gebruikt om een mechanisme of object te verplaatsen, maar het werkt anders dan een servo. Een stepper gebruikt elektrische impulsen om een motor aan te sturen die in kleine stapjes draait, waardoor het mechanisme of object in kleine stapjes beweegt. Het aantal impulsen dat wordt gegeven, bepaalt hoeveel stappen de motor draait en dus hoeveel het mechanisme of object beweegt. Dit maakt het mogelijk om nauwkeurige bewegingen te maken en bijvoorbeeld ook om de snelheid van de beweging te regelen.
 
 Stepper motoren worden vaak gebruikt in toepassingen waar precisiepositionering en -besturing vereist is, zoals CNC-machines, 3D-printers, robotica en andere geautomatiseerde systemen. Ze kunnen nauwkeurig worden gepositioneerd en gestuurd, en bieden een hoog koppel in verhouding tot hun grootte.
 
@@ -76,6 +76,22 @@ In dit laatste voorbeeld laat zien hoe je twee servo-motoren kan aansluiten op e
 4. De servo-motoren beginnen nu te bewegen.
 
 ![Servos aansluiten](./assets/fritzing/servos_bb.png)
+
+### 5_Nema_stepper
+
+Dit voorbeeld laat zien hoe je een NEMA 17 stappenmotor kan aansturen via een CNC Shield V3 op een Arduino Uno. De motor beweegt afwisselend heen en terug over 200 stappen. Deze stepper motors zijn duurder, groter en sterker, maar ook wat lsatiger in gebruik. Ze moeten met een aparte 12 volt voeding. 
+	1.	Open het voorbeeld in het mapje Code/5_Nema_stepper/5_Nema_stepper.ino
+	2.	Plaats het CNC Shield V3 op de Arduino Uno.
+	3.	Plaats een A4988 driver in de X-socket van het CNC Shield (als dat nog niet gebeurt is), LET OP DE POSITIE VAN DE _"EN"_ PIN!
+	4.	Sluit de NEMA 17 stappenmotor aan op de X-uitgang van het CNC Shield.
+	5.	Sluit een externe voeding (bijv. 12V) aan op het CNC Shield voor de motorvoeding.
+	6.	Upload het voorbeeld naar de Arduino.
+	7.	De motor zal nu 200 stappen vooruit en vervolgens 200 stappen terug bewegen.
+
+Let op:
+	•	Stel de stroomlimiet van de driver correct in met een schroevendraaier.
+	•	Zorg voor een koelblokje op de driver.
+	•	De microstepping kan worden ingesteld met jumpers onder de driver (optioneel).
 
 ## Conclusie
 
