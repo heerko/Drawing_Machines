@@ -29,9 +29,8 @@ const int STEPPER_PIN_4 = 11;
 
 const int SERVO_PIN = 3; // De pin die is aangesloten op de servo motor
 
-int servoAngle = 0; // Variabelen om de hoek van de servo en het aantal stappen van de stepper bij te houden
-int servoIncrement = 10;
-int stepperSteps = 0;
+int servoGraden = 0; // Variabele om de hoek van de servo en het aantal stappen van de stepper bij te houden
+int servoStap = 10; // De grootte van elk stapje van de servo. Groter is sneller
 
 Stepper stepper(STEPS_PER_REVOLUTION, STEPPER_PIN_1, STEPPER_PIN_2, STEPPER_PIN_3, STEPPER_PIN_4); // Stepper object aanmaken met de pinnen en stappen per rotatie
 Servo servo; // Servo object aanmaken
@@ -42,11 +41,11 @@ void setup() {
 }
 
 void loop() {
-  servoAngle += servoIncrement; // De hoek van de servo motor veranderen met de aangegeven increment
-  if (servoAngle >= 180 || servoAngle <= 0) { // Controleren of de hoek de grenzen van 0 en 180 graden overschrijdt
-    servoIncrement *= -1; // Als dat het geval is, de increment omkeren om de servo in de tegenovergestelde richting te laten bewegen
+  servoGraden += servoStap; // De hoek van de servo motor veranderen met de aangegeven increment
+  if (servoGraden >= 180 || servoGraden <= 0) { // Controleren of de hoek de grenzen van 0 en 180 graden overschrijdt
+    servoStap *= -1; // Als dat het geval is, de servoStap omkeren (+ word - en andersom) om de servo in de tegenovergestelde richting te laten bewegen
   }
-  servo.write(servoAngle); // De servo motor bewegen naar de huidige hoek
+  servo.write(servoGraden); // De servo motor bewegen naar de huidige hoek
 
   // De stepper motor bewegen
   int steps = 10; // Het aantal stappen dat de motor moet maken

@@ -14,16 +14,16 @@ het aansluiten van de servo.
 Servo myservo;  // Servo object aanmaken om de servo motor te besturen
 
 int pos = 0;  // Variabele om de positie van de servo motor bij te houden
-int speed = 1;  // Snelheid van de servo motor
+int snelheid = 1;  // Snelheid van de servo motor
 
 void setup() {
   myservo.attach(3);  // de servo motor aansluiten op pin 3 van de Arduino
 }
 
 void loop() {
-  pos = pos + speed;            // Verander de positie van de servo motor met de aangegeven snelheid
+  pos = pos + snelheid;            // Verander de positie van de servo motor met de aangegeven snelheid
   if (pos >= 180 || pos <= 0) {  // Controleer of de hoek van de servo motor de grenzen van 0 en 180 graden overschrijdt
-    speed = -speed;              // Als dat het geval is, omkeren van de snelheid om de servo in de tegenovergestelde richting te laten bewegen
+    snelheid = -snelheid;        // Als dat het geval is, omkeren (- word + en andersom) van de snelheid om de servo in de tegenovergestelde richting te laten bewegen
   }
 
   myservo.write(pos);  // De servo motor bewegen naar de huidige hoek
