@@ -80,13 +80,13 @@ In dit laatste voorbeeld laat zien hoe je twee servo-motoren kan aansluiten op e
 ### 5_Nema_stepper
 
 Dit voorbeeld laat zien hoe je een NEMA 17 stappenmotor kan aansturen via een CNC Shield V3 op een Arduino Uno. De motor beweegt afwisselend heen en terug over 200 stappen. Deze stepper motors zijn duurder, groter en sterker, maar ook wat lsatiger in gebruik. Ze moeten met een aparte 12 volt voeding. 
-	1.	Open het voorbeeld in het mapje Code/5_Nema_stepper/5_Nema_stepper.ino
-	2.	Plaats het CNC Shield V3 op de Arduino Uno.
-	3.	Plaats een A4988 driver in de X-socket van het CNC Shield (als dat nog niet gebeurt is), LET OP DE POSITIE VAN DE _"EN"_ PIN!
-	4.	Sluit de NEMA 17 stappenmotor aan op de X-uitgang van het CNC Shield.
-	5.	Sluit een externe voeding (bijv. 12V) aan op het CNC Shield voor de motorvoeding.
-	6.	Upload het voorbeeld naar de Arduino.
-	7.	De motor zal nu 200 stappen vooruit en vervolgens 200 stappen terug bewegen.
+1.	Open het voorbeeld in het mapje Code/5_Nema_stepper/5_Nema_stepper.ino
+2.	Plaats het CNC Shield V3 op de Arduino Uno.
+3.	Plaats een A4988 driver in de X-socket van het CNC Shield (als dat nog niet gebeurt is), LET OP DE POSITIE VAN DE _"EN"_ PIN!
+4.	Sluit de NEMA 17 stappenmotor aan op de X-uitgang van het CNC Shield.
+5.	Sluit een externe voeding (bijv. 12V) aan op het CNC Shield voor de motorvoeding.
+6.	Upload het voorbeeld naar de Arduino.
+7.	De motor zal nu 200 stappen vooruit en vervolgens 200 stappen terug bewegen.
 
 Let op:
 	•	Stel de stroomlimiet van de driver correct in met een schroevendraaier.
