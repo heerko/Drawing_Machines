@@ -21,23 +21,19 @@
 #include <Stepper.h> // Bibliotheken importeren voor de Stepper en Servo motoren
 #include <Servo.h>
 
-const int STEPS_PER_REVOLUTION = 2038; // Het aantal stappen dat nodig is om een volledige rotatie van de stepper motor te maken
-const int STEPPER_PIN_1 = 8; // De pinnen die zijn aangesloten op de stepper motor
-const int STEPPER_PIN_2 = 9;
-const int STEPPER_PIN_3 = 10;
-const int STEPPER_PIN_4 = 11;
-
+const int STEPS_PER_REVOLUTION = 2048; // Het aantal stappen dat nodig is om een volledige rotatie van de stepper motor te maken
 const int SERVO_PIN = 3; // De pin die is aangesloten op de servo motor
 
 int servoGraden = 0; // Variabele om de hoek van de servo en het aantal stappen van de stepper bij te houden
 int servoStap = 10; // De grootte van elk stapje van de servo. Groter is sneller
 
-Stepper stepper(STEPS_PER_REVOLUTION, STEPPER_PIN_1, STEPPER_PIN_2, STEPPER_PIN_3, STEPPER_PIN_4); // Stepper object aanmaken met de pinnen en stappen per rotatie
+Stepper stepper(STEPS_PER_REVOLUTION, 8, 10, 9, 11); // Stepper object aanmaken met de pinnen en stappen per rotatie
+// 8, 10, 9, 11 zijn de pinnen waarop de stepper is aangesloten. De volgorde is hier dus anders!
 Servo servo; // Servo object aanmaken
 
 void setup() {
   servo.attach(SERVO_PIN); // De servo motor aansluiten op de aangegeven pin
-  stepper.setSpeed(5); // De snelheid van de stepper motor instellen op 5 rotaties per seconde
+  stepper.setSpeed(7); // De snelheid van de stepper motor inx1stellen op 5 rotaties per seconde
 }
 
 void loop() {

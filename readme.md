@@ -93,6 +93,9 @@ Let op:
 	•	Zorg voor een koelblokje op de driver.
 	•	De microstepping kan worden ingesteld met jumpers onder de driver (optioneel).
 
+![Nema stepper](./assets/images/arduino-cnc-shield-v3_bb.png)
+(afbeelding van https://www.aranacorp.com/en/using-an-arduino-cnc-shield-v3/)
+
 ## Conclusie
 
 Dit zijn slechts een paar voorbeelden van wat je met een Arduino-bord kan doen. Er zijn veel meer mogelijkheden, afhankelijk van wat je wilt bereiken. Met behulp van de Arduino IDE en de juiste bibliotheken kan je vrijwel elk project maken dat je maar kan bedenken.
