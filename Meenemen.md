@@ -1,0 +1,13 @@
+- 12x Arduino
+- ~20x Servos
+- Dupond kabeltjes
+- ULN2003 + steppers
+- Nema steppers (connectors controleren)
+- 12v voedingen
+- AA batterijen
+- dc motortjes
+- tape
+- elastieken
+- hotglue
+- pulleys
+  
