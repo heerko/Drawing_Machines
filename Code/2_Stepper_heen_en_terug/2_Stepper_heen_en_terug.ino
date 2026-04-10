@@ -19,16 +19,18 @@ const int STEPS_PER_REVOLUTION = 2048; // Het aantal stappen dat nodig is om een
 Stepper stepper(STEPS_PER_REVOLUTION, 8, 10, 9, 11); // Stepper object aanmaken met de pinnen en stappen per rotatie
 // 8, 10, 9, 11 zijn de pinnen waarop de stepper is aangesloten. De volgorde is hier dus anders!
 
-void setup() {
-stepper.setSpeed(10); // De snelheid van de stepper motor instellen op 5 rotaties per seconde
+void setup()
+{
+  stepper.setSpeed(13); // De snelheid van de stepper motor instellen op 5 rotaties per seconde
 }
 
-void loop() {
-// De stepper motor bewegen
-stepper.step(STEPS_PER_REVOLUTION); // De aangegeven stappen uitvoeren
-delay(1000); // Een pauze van 1 seconde om de motor te laten rusten
+void loop()
+{
+  // De stepper motor bewegen
+  stepper.step(STEPS_PER_REVOLUTION / 4); // De aangegeven stappen uitvoeren
+  delay(1000);                            // Een pauze van 1 seconde om de motor te laten rusten
 
-// De stepper motor in omgekeerde richting bewegen
-stepper.step(-STEPS_PER_REVOLUTION); // De aangegeven stappen in omgekeerde richting uitvoeren
-delay(1000); // Een pauze van 1 seconde om de motor te laten rusten
+  // De stepper motor in omgekeerde richting bewegen
+  stepper.step(-STEPS_PER_REVOLUTION); // De aangegeven stappen in omgekeerde richting uitvoeren
+  delay(1000);                         // Een pauze van 1 seconde om de motor te laten rusten
 }

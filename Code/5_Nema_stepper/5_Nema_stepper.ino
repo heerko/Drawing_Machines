@@ -10,10 +10,6 @@
  *
  * Belangrijk:
  * - Zorg ervoor dat er een koelblokje op de driver zit!
- * - De ENABLE-, DIR- en STEP-signalen worden automatisch toegewezen via het shield:
- *     X_STEP = pin 2
- *     X_DIR = pin 5
- *     X_ENABLE = pin 8
  */
 
 // Pin-definities voor de X-as driver. Niet veranderen. 
@@ -38,9 +34,9 @@ void loop()
   for (int i = 0; i < 200; i++)
   {
     digitalWrite(X_STEP_PIN, HIGH);
-    delayMicroseconds(1000);
+    delayMicroseconds(4000);
     digitalWrite(X_STEP_PIN, LOW);
-    delayMicroseconds(1000);
+    delayMicroseconds(4000);
   }
 
   delay(1000);
@@ -51,9 +47,9 @@ void loop()
   for (int i = 0; i < 200; i++)
   {
     digitalWrite(X_STEP_PIN, HIGH);
-    delayMicroseconds(1000);
+    delayMicroseconds(4000);
     digitalWrite(X_STEP_PIN, LOW);
-    delayMicroseconds(1000);
+    delayMicroseconds(4000);
   }
 
   delay(1000);
