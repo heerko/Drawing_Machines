@@ -21,7 +21,7 @@ Vandaag gebruiken we de Arduino met twee types makkelijk te gebruiken motoren.
 
 ### Servo
 
-Een servo is een apparaat dat wordt gebruikt om een mechanisme of object op een bepaalde positie te houden of te verplaatsen. Het werkt door middel van een elektrische motor die is aangesloten op een sensor die de positie van het mechanisme of object meet. Wanneer de sensor detecteert dat het mechanisme of object niet op de juiste positie is, past de motor de positie aan totdat deze weer op de gewenste positie is.
+Een servo is een motortje dat wordt gebruikt om een mechanisme of object op een bepaalde positie te houden of te verplaatsen. Het werkt door middel van een elektrische motor die is aangesloten op een sensor die de positie van het mechanisme of object meet. Wanneer de sensor detecteert dat het mechanisme of object niet op de juiste positie is, past de motor de positie aan totdat deze weer op de gewenste positie is.
 
 De positie van de servo kan worden gecontroleerd door een speciale puls naar de besturingspin van de servo te sturen. Door de pulsbreedte van deze puls te variëren, kan de positie van de servo worden gewijzigd. Servo's worden veel gebruikt in robotica, modelbouw en andere toepassingen waar precisiepositionering vereist is.
 
@@ -35,12 +35,13 @@ Stepper motoren worden vaak gebruikt in toepassingen waar precisiepositionering 
 
 ### 1_Servo_Simpel
 
-Dit voorbeeld laat zien hoe je een servo-motor kan aansluiten op een Arduino-bord. De servo kan worden bediend door een signaal naar de Arduino te sturen.
+Dit voorbeeld laat zien hoe je een servo-motor kan aansluiten op een Arduino-bord. De servo 
 
 1. Open het voorbeeld in het mapje Code/1_Servo_Simpel/1_Servo_Simpel.ino
-2. Sluit de servo-motor aan op de Arduino volgens het bedradingsschema.
-3. Upload het voorbeeld naar de Arduino.
-4. De servo-motor begint nu te bewegen.
+2. Installeer de Servo library door naar het menu: Sketch > Include Library > Manage Libraries... te gaan en te zoeken op 'Servo'. Klik op Install bij 'Servo by Michael Margolis, Arduino'. 
+3. Sluit de servo-motor aan op de Arduino volgens het bedradingsschema hieronder. 
+4. Upload het voorbeeld naar de Arduino.
+5. De servo-motor begint nu te bewegen.
 
 ![Servo aansluiten](./assets/fritzing/servo_bb.png)
 
@@ -59,7 +60,7 @@ Dit voorbeeld laat zien hoe je een stepper-motor kan aansluiten op een Arduino-b
 
 Dit voorbeeld laat zien hoe je zowel een servo- als een stepper-motor kan aansluiten op een Arduino-bord. 
 
-1. Open het voorbeeld in het mapje Code/3_Stepper_en_Servo/3_Stepper_en_Servo.ino
+1. Open het voorbeeld in het mapje Code/3_Stepper_en_Servo/3_Stepper_en_Servo.ino (zie voorbeeld 1.2x voor de library)
 2. Sluit de servo-motor, stepper-motor en ULN2003-driver aan op de Arduino volgens het bedradingsschema.
 3. Upload het voorbeeld naar de Arduino.
 4. De servo-motor zal heen en weer bewegen en de stepper-motor zal één stap maken.
@@ -79,7 +80,7 @@ In dit laatste voorbeeld laat zien hoe je twee servo-motoren kan aansluiten op e
 
 ### 5_Nema_stepper
 
-Dit voorbeeld laat zien hoe je een NEMA 17 stappenmotor kan aansturen via een CNC Shield V3 op een Arduino Uno. De motor beweegt afwisselend heen en terug over 200 stappen. Deze stepper motors zijn duurder, groter en sterker, maar ook wat lsatiger in gebruik. Ze moeten met een aparte 12 volt voeding. 
+Dit voorbeeld laat zien hoe je een NEMA 17 stappenmotor kan aansturen via een CNC Shield V3 op een Arduino Uno. De motor beweegt afwisselend heen en terug over 200 stappen. Deze stepper motors zijn duurder, groter en sterker, maar ook wat lsatiger in gebruik. Ze hebben een aparte 12 volt voeding nodig om te kunnen werken. 
 1.	Open het voorbeeld in het mapje Code/5_Nema_stepper/5_Nema_stepper.ino
 2.	Plaats het CNC Shield V3 op de Arduino Uno.
 3.	Plaats een A4988 driver in de X-socket van het CNC Shield (als dat nog niet gebeurt is), LET OP DE POSITIE VAN DE _"EN"_ PIN!
