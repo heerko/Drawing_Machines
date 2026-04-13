@@ -12,27 +12,6 @@ Bouw met de materialen die ik heb meegenomen, of met wat je zelf vindt. Het enig
 
 ---
 
-## Andere voorbeelden
-
-Wil je een andere beweging of de code aanpassen? 
-Download de voorbeelden via [Github](https://github.com/heerko/Drawing_Machines) — klik rechtsboven op [<> Code] en daarna op [Download ZIP].
-Daarna moet je de [Arduino IDE](https://www.arduino.cc/en/software) installeren, open daarne een van de onderstaande voorbeelden en upload het naar de Arduino.
-Hieronder staat een wat uitgebreider stappenplan hiervoor. 
-
-**[1. Servo simpel](./Code/1_Servo_Simpel/README.md)**
-Alleen een servo, heen en weer.
-
-**[2. Stepper heen en terug](./Code/2_Stepper_heen_en_terug/README.md)**
-Alleen een stappenmotor, in vaste stappen.
-
-**[3. Stepper en Servo](./Code/3_Stepper_en_Servo/README.md)**
-Dit is het voorbeeld dat al op de Arduino's staat. Het beweegt zowel een stepper als een servo.
-
-**[4. Servo double](./Code/4_Servo_Double/README.md)**
-Twee servo's, elk met hun eigen beweging.
-
----
-
 *Technische noot: we gebruiken vandaag de stroomvoorziening van de Arduino zelf. In een uitgewerkt project gebruik je een aparte voeding voor de motoren.*
 
 ## De techniek
