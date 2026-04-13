@@ -1,6 +1,6 @@
 ### 2_Stepper_heen_en_terug
 
-Dit voorbeeld laat zien hoe je een stepper-motor kan aansluiten op een Arduino-bord. De stepper kan worden aangestuurd door signalen naar de Arduino te sturen.
+Dit voorbeeld laat zien hoe je een stepper-motor kan aansluiten op een Arduino-bord. De Arduino stuurt de stepper aan door pulsjes stroom in een specifieke volgorde naar de motor te sturen.
 
 1. Open het voorbeeld in het mapje Code/2_Stepper_heen_en_terug/2_Stepper_heen_en_terug.ino
 2. Sluit de stepper-motor en ULN2003-driver aan op de Arduino volgens het bedradingsschema.

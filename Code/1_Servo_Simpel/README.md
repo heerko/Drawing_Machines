@@ -1,6 +1,6 @@
 ### 1_Servo_Simpel
 
-Dit voorbeeld laat zien hoe je een servo-motor kan aansluiten op een Arduino-bord. 
+Dit voorbeeld laat zien hoe je een servo-motor kan aansluiten op een Arduino-bord. De servo draait in een vast tempo heen en weer tussen 0 en 180 graden. 
 
 1. Open het voorbeeld 1_Servo_Simpel.ino in de Arduino IDE
 2. Installeer de Servo library door naar het menu: Sketch > Include Library > Manage Libraries... te gaan en te zoeken op 'Servo'. Klik op Install bij 'Servo by Michael Margolis, Arduino'. 
